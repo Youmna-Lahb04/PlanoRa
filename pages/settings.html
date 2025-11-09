@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlanoRa</title>
     <link rel="icon" type="image/jpg" href="../images/logo_icon.jpg" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
   </head>
   <body>
     <header>
-      <a href="../"><img src="../images/logo_PlanoRa.jpg" alt="LOGO" /></a>
+      <a href="../"><img src="../images/logo2.png" alt="LOGO" /></a>
       <nav class="nav_links">
         <a href="../">Home</a>
         <a href="learn_quiz.html">Learn & Quiz</a>
@@ -17,6 +18,58 @@
       </nav>
       <hr />
     </header>
+
+    <!-- image banner pour design -->
+    <div id="banner">
+      <img src="../images/banner.jpg" alt="mon banner" />
+    </div>
+
+    <!-- le traitement de settings sera fait avec le form suivant -->
+    <form action="">
+      <!-- head bloc -->
+      <div class="bloc">
+        <h2>Settings</h2>
+        <input type="submit" value="Save" />
+        <input type="reset" value="reset" />
+      </div>
+      <br />
+
+      <!-- duration bloc -->
+      <div class="bloc">
+        <h3>Duration</h3>
+        <hr />
+        <div class="sub_bloc">
+          <p>Focus duration</p>
+          <input type="number" name="focus_duration" />
+        </div>
+        <div class="sub_bloc">
+          <p>Short-Break duration</p>
+          <input type="number" name="short_break_duration" />
+        </div>
+        <div class="sub_bloc">
+          <p>Long-Break duration</p>
+          <input type="number" name="long_break_duration" />
+        </div>
+      </div>
+
+      <!-- theme bloc -->
+      <div class="bloc">
+        <h3>Theme</h3>
+        <hr />
+        <div class="sub_bloc">
+          <p>Focus theme</p>
+          <input type="color" name="focus_theme" />
+        </div>
+        <div class="sub_bloc">
+          <p>Short-Break theme</p>
+          <input type="color" name="short_break_theme" />
+        </div>
+        <div class="sub_bloc">
+          <p>Long-Break theme</p>
+          <input type="color" name="long_break_theme" />
+        </div>
+      </div>
+    </form>
 
     <footer>
       <hr />

@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlanoRa</title>
     <link rel="icon" type="image/jpg" href="../images/logo_icon.jpg" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
   </head>
   <body>
     <header>
-      <a href="../"><img src="../images/logo_PlanoRa.jpg" alt="LOGO" /></a>
+      <a href="../"><img src="../images/logo2.png" alt="LOGO" /></a>
       <nav class="nav_links">
         <a href="../">Home</a>
         <a href="">Learn & Quiz</a>
@@ -17,6 +18,27 @@
       </nav>
       <hr />
     </header>
+
+    <h1>Time for a Quiz ;)</h1>
+    <!-- Conteneur du falshcard -->
+    <div class="container">
+      <!-- le comportement de flashcard sera effectue avec JS selon le traitement d'utilisateur -->
+      <div class="flashcard">
+        <div class="front-card">
+          <p>question 1</p>
+        </div>
+        <div class="back-card">
+          <p>answer 1</p>
+        </div>
+      </div>
+      <p id="counter">counter</p>
+
+      <div class="navigation-card">
+        <button id="prev-b">Previous</button>
+        <button id="next-b">Next</button>
+      </div>
+      <p class="card-txt">Click the card to flip it!</p>
+    </div>
 
     <footer>
       <hr />

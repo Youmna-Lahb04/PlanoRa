@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlanoRa</title>
     <link rel="icon" type="image/jpg" href="../images/logo_icon.jpg" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
   </head>
   <body>
     <header>
-      <a href="../"><img src="../images/logo_PlanoRa.jpg" alt="LOGO" /></a>
+      <a href="../"><img src="../images/logo2.png" alt="LOGO" /></a>
       <nav class="nav_links">
         <a href="../">Home</a>
         <a href="learn_quiz.html">Learn & Quiz</a>
@@ -17,6 +18,72 @@
       </nav>
       <hr />
     </header>
+
+    <h1>My Tasks</h1>
+
+    <!-- head of my page contains buttons to change the view -->
+    <div class="view">
+      <button id="board-view-bttn">Board</button>
+      <button id="list-view-bttn">List</button>
+    </div>
+
+    <!-- head of my page contains options of sorting and filtring -->
+    <div class="options">
+      <select name="filter" id="filter">
+        <option value="">--choose--</option>
+        <option value="">filter1</option>
+      </select>
+      <select name="sort" id="sort">
+        <option value="">--choose--</option>
+        <option value="">sort1</option>
+      </select>
+    </div>
+
+    <!-- affichage si il ny a aucune tache -->
+    <div id="no-task">
+      <h3>No tasks yet?</h3>
+      <p>"Start where you are. Use what you have. Do what you can.”</p>
+    </div>
+
+    <!-- affichage si il existe de tache, sous forme de board view -->
+    <div id="board-view">
+      <div id="board-card">
+        <h3>Task title</h3>
+        <hr />
+        <p>Due Date</p>
+        <p>priority</p>
+        <progress id="file" max="100" value="40">40%</progress>
+        <hr />
+        <a href="session.html"><button>Focus now</button></a>
+      </div>
+    </div>
+
+    <!-- affichage si il existe de tache, sous forme de list(tableau) view -->
+    <div id="list-view">
+      <div id="list-card">
+        <table>
+          <tr>
+            <td>Due Date</td>
+            <td>priority</td>
+            <td>Task title</td>
+            <td><button>Edit</button></td>
+            <td>
+              <button><a href="">Edit</a></button>
+            </td>
+            <td>
+              <button><a href="">Delete</a></button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- un boutton qui redigera l'utilisateur vers form.html pour ajouter une nouvelle tache -->
+    <div class="nav_mesTasks">
+      <a href="./form.html">
+        <img src="./images/ajouter.svg" alt="mes tasks" />
+      </a>
+    </div>
 
     <footer>
       <hr />
