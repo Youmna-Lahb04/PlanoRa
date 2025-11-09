@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanoRa</title>
+    <link rel="icon" type="image/jpg" href="../images/logo_icon.jpg">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <header>
+      <a href="../"><img src="../images/logo2.png" alt="LOGO" /></a>
+      <nav class="nav_links">
+        <a href="../">Home</a>
+        <a href="./pages/learn_quiz.html">Learn & Quiz</a>
+        <a href="./pages/my_tasks.html">My tasks</a>
+        <a href="./pages/settings.html">Settings</a>
+      </nav>
+      <hr />
+    </header>
+    <div class="form"> <!--pour cadrer le formulaire-->
+      <form>
+        <h2>Add Task</h2>
+        <label for="title_task">Title Task :</label>
+        <input type="text" id="title_task"><br>
+        <br>
+        <label for="date">Due Date :</label>
+        <input type="date" id="date"><br>
+        <br>
+        <label for="hour">Estimated Time(in hour) :</label>
+        <input type="number" id="hour" min="0" max="24" ><br>
+        <br>
+        <label for="priority">Mark as High priority :</label>
+        <input type="checkbox" id="priority"><br>
+        <br>
+        <div class="button_form">  
+          <!-- pour modifier display des 2 buttons -->
+          <input type="submit" id="save" value="Save Task">
+          <input type="reset" id="reset" value="Reset">
+        </div>
+      </form>
+    </div>
+    <footer>
+      <hr />
+      Author: Wissal Ez-zahraoui & Youmna Lahbichi <br />
+      &copy; copyright reversed 2025 <br />
+    </footer>
+</body>
+</html>
